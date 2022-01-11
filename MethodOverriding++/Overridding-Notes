@@ -1,0 +1,5 @@
+
+Method overriding or "function overriding" is an example of dynamic binding.
+In C++ there are two types of binding, dynamic(late) and static binding(early).
+
+Static binding happens at compilation, and dynamic binding happens at runtime.
