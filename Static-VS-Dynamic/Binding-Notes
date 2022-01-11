@@ -1,0 +1,24 @@
+
+What is the difference between static and dynamic binding? Why does it matter?
+
+By default, C++ will match a function call with the correct function definition during compilation.
+This is known as static binding.
+
+However, you can specify that the compiler matches a function call with the correct function definition at run time.
+This is known as dynamic binding.
+
+Static binding(early):
+    -Happens at compile time
+    -Function definition and the function call are linked during compile-time
+    -Static binding happens when all information needed to call a function is available at compile-time.
+    -Static binding is achieved through normal function calls, function overloading, and operator overloading. (This is something I would like to cover in detail.)
+    -Static binding is more efficient since all data is present.
+
+Dynamic binding(late):
+    -Happens at run time.
+    -Function calls are not resolved until runtime, so they are not bound.
+    -Dynamic binding happens when the compiler cannot determine all information needed for a function during compilation.
+    -Dynamic binding is achieved through use of virtual functions.
+    -Function calls are not resolved until runtime for later binding, resulting in slower execution.
+    -A key advantage of dynamic binding is that it is flexible since a single function can handle different types of objects at run time.
+    -Codebase size is reduced and the source code is cleaner.
